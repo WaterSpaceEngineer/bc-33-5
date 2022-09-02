@@ -506,6 +506,33 @@ img {
   margin-bottom: 30px;
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: var(--secondary-txt_mod-dark);
+}
+
+.social-icon {
+  fill: var(--secondary-txt_mod-light);
+}
+
+.social-link:hover .social-icon, 
+.social-link:focus .social-icon {
+   fill:var(--accent-color)
+}
+
+
 /* Barbers end */
 
 /* Gallery start */
