@@ -197,6 +197,33 @@ img {
   font-weight: 700;
 }
 
+.soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: var(--secondary-txt_mod-dark);
+}
+
+.soc-icon {
+  fill: var(--secondary-txt_mod-light);
+}
+
+.soc-link:hover .soc-icon, 
+.soc-link:focus .soc-icon {
+  fill:var(--accent-color)
+}
+
+
 /* header start*/
 
 .header {
@@ -506,33 +533,6 @@ img {
   margin-bottom: 30px;
 }
 
-.social-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px; 
-}
-
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background-color: var(--secondary-txt_mod-dark);
-}
-
-.social-icon {
-  fill: var(--secondary-txt_mod-light);
-}
-
-.social-link:hover .social-icon, 
-.social-link:focus .social-icon {
-   fill:var(--accent-color)
-}
-
-
 /* Barbers end */
 
 /* Gallery start */
@@ -597,11 +597,27 @@ img {
 
   font-size: 18px;
   line-height: 1.67;
+  display: flex;
+  align-items: center;
+  transition: color 250ms ease;
+}
+
+.contacts-link.contacts-address {
+  align-items: flex-start;
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-address .contacts-icon {
+  margin-top: 5px;
+}
+
+.contacts-icon {
+  fill: currentColor;
+  margin-right: 16px;
 }
 
 .contacts-work {
